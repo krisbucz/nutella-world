@@ -1,0 +1,254 @@
+body{
+    background-image: radial-gradient(#432818, #99582a);
+}
+
+container{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    opacity: 1;
+    flex-direction: column;
+}
+
+section{
+    display: inline-flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+}
+/*The header*/
+header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 100;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+header img{
+    width: auto;
+    height: 100px;
+    margin: 10px;
+}
+header ul li{
+    display: inline;
+    margin: 10px;
+}
+header ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #FF0000;
+    font-size: 2.5em;
+}
+header ul li a:first-letter{
+    color: #000000; 
+}
+
+/*The main content*/
+main{
+    background-image: url("./images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 120px;
+    width: 100%;
+    height: 500px;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+main h1{
+    color: #FF0000;
+    font-size: 4em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-top: 15%;
+    text-align: center;
+}
+main h1::first-letter{
+    color: #000000;
+}
+main .description{
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+main .description p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    color: #7F4538;
+}
+main .description h2{
+    font-size: 2.5em;
+    color: #FF0000;
+}
+main .description h2::first-letter{
+    color: #000000;
+}
+/*products and activities*/
+products, activities{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+products h1, activities h1, #aboutUs article h1{
+    color: #FF0000;
+    font-size: 3em;
+    padding: 20px;
+}
+products h1::first-letter, activities h1::first-letter{
+    color: #000000;
+}
+products figure, activities figure{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+}
+products figure img, activities figure img{
+    width: 50%;
+    margin: 10px;
+    border-radius: 20px;
+    max-height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+products figure h2, activities figure h2{
+    width: 50%;
+    margin: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #7F4538;
+}
+products hr, activities hr{
+    width: 80%;
+}
+/*about us*/
+#aboutUs{
+    width: 100%;
+    background-image: url("./images/aboutUs.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0.7;
+}
+#aboutUs article{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    text-align: center;
+    width: 80%;
+}
+#aboutUs article p{
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    color:#7F4538;
+}
+#aboutUs article h1::first-letter{
+    color: #000000;
+}
+/*footer*/
+footer{
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer p{
+    font-size: 1.5em;
+    color: #FF0000;
+    margin: 10px 10px;
+}
+@media only screen and (max-width:1000px){
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    products, activities{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    header ul li a{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width:920px){
+    main h1{
+        font-size: 3em;
+    }
+    main .description p{
+        font-size: 2em;
+    }
+    header ul li a{
+        font-size: 1.6em;
+        margin: 5px;
+    }
+    header img{
+        margin: 5px;
+        height: 80px;
+    }
+    main{
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width:740px){
+    header{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    header ul li a img{
+        width: 80px;
+        margin: auto;
+    }
+    main h1{
+        font-size: 2em;
+    }
+    main .description p{
+        font-size: 1.5em;
+    }
+    main{
+        margin-top: 0;
+    }
+    main, section, #aboutUs, footer{
+        margin-left: 20%;
+        width: 80%;
+    }
+    main .description{
+        width: 70%;
+    }
+    section{
+        margin-top: 10px;
+    }
+    products figure h2, activities figure h2{
+        font-size: 2em;
+    }
+}

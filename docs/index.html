@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Nutella World</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" width="width=device-width, initial-scale= 1.0" />
+    <link href="resources/resetCSS.css" rel="stylesheet" type="text/css"/>
+    <link href="resources/css.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!--Flex container-->
+<container>
+    <!--header-->
+    <header>
+        <img src="resources/images/logo.png">
+        <ul>
+            <li><a href="index.html" id="homeIcon">home</a></li>
+            <li><a href="#products" id="activitiesIcon">activities</a></li>
+            <li><a href="#activities" id="productsIcon">products</a></li>
+            <li><a href="#aboutUs" id="aboutUsIcon">about us</a></li>
+        </ul>
+        <img src="resources/images/logo.png">
+    </header>
+    <!--main content-->
+    <main>
+        <h1>welcome to Nutella World</h1>
+        <div class="description">
+            <h2>what's it all about?</h2>
+            <hr>
+            <p>Nutella World is all about making all your nutella dreams come true! With many activties and products we are sure you will find what are are looking for!</p>
+        </div>
+    </main>
+    <!--products and activities-->
+    <br>
+    <section id="productsAndActivities">
+        <products id="products">
+            <h1>our products</h1>
+            <hr>
+            <figure>
+                <img src="resources/images/waffle.jpg">
+                <h2>the nutella waffles</h2>
+            </figure>
+            <figure>
+                <h2>the nutella pancakes</h2>
+                <img src="resources/images/pancakes.jpg">
+            </figure>
+            <figure>
+                <img src="resources/images/cupcake.jpg">
+                <h2>the nutella cupcakes</h2>
+            </figure>
+            <figure>
+                <h2>the nutella fills chocolate balls</h2>
+                <img src="resources/images/cocoBall.jpg">
+            </figure>
+        </products>
+        <activities id="activities">
+            <h1>our activities</h1>
+            <hr>
+            <figure>
+                <h2>the nutella cafe</h2>
+                <img src="resources/images/cafe.jpg">
+            </figure>
+            <figure>
+                <img src="resources/images/cocoFountain.jpg">
+                <h2>the nutella chocolate fountain</h2>
+            </figure>
+            <figure>
+                <h2>the nutella chocolate chefs</h2>
+                <img src="resources/images/customeDessert.jpg">
+            </figure>
+            <figure>
+                <img src="resources/images/wheel.jpg">
+                <h2>the nutella fun fair rides</h2>
+            </figure>
+        </activities>
+    </section>
+    <!--about us-->
+    <br>
+    <div id="aboutUs">
+        <article>
+            <h1>about us</h1>
+            <hr>
+            <p>Pietro Ferrero owned a bakery in Alba, an Italian town known for the production of hazelnuts. In 1946, he sold the initial 300 kilograms (660 lb) batch of Pasta Gianduja, derived from Gianduja. Originally sold as a solid block, Ferrero started to sell a creamy version in 1951 as Supercrema gianduja.</p>
+        </article>
+    </div>
+    <!--footer-->
+    <footer>
+        <p>&copy; Nutella World</p>
+        <p class="address">United Kingdom, London, 1 Nutella Street</p>
+    </footer>
+</container>
+
+<script>
+    function iconChange(icon) {
+    if (icon.matches) { // If media query matches
+      document.getElementById("homeIcon").innerHTML = '<img src="resources/images/homeIcon.png">';
+      document.getElementById("activitiesIcon").innerHTML = '<img src="resources/images/activitiesIcon.png">';
+      document.getElementById("productsIcon").innerHTML = '<img src="resources/images/productsIcon.png">';
+      document.getElementById("aboutUsIcon").innerHTML = '<img src="resources/images/aboutUsIcon.png">';
+    }
+    else{
+      document.getElementById("homeIcon").innerHTML = 'home';
+      document.getElementById("activitiesIcon").innerHTML = 'activities';
+      document.getElementById("productsIcon").innerHTML = 'products';
+      document.getElementById("aboutUsIcon").innerHTML = 'about us';
+    }
+  }
+  
+  var icon = window.matchMedia("(max-width:740px)")
+  iconChange(icon) // Call listener function at run time
+  icon.addListener(iconChange) // Attach listener function on state changes
+</script>
+
+</body>
+</html> 
